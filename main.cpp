@@ -125,6 +125,7 @@ public:
 int main()
 {
     //==========================ART STUDENTS=============================
+    //Vector for art students
     std::vector<Art_Student *> art_students;
     art_students.push_back(new Art_Student);
 
@@ -140,9 +141,7 @@ int main()
     //-----------------Adding 5 more objects (students) to art_student vector--------------------
     //Using pointers, and allocating memory for those pointers
 
-    //Vector for art students
     Art_Student *a1 = new Art_Student;
-
     a1->set_name("Georgia", "O'Keeffe");
         a1->set_GPA(3.9);
         a1->set_grad_year(1910);
