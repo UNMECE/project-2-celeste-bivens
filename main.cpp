@@ -106,7 +106,10 @@ private:
     std::string concentration;
 public:
 
-    Physics_Student() : Student() {}
+    Physics_Student() : Student() 
+    {
+        concentration = " "; 
+    }
 
     void set_concentration(std::string c) {concentration = c;}
     std::string get_concentration(){return concentration;}
@@ -287,6 +290,7 @@ int main()
         physics_students[i]->printInfo(writefile);
     }
 
+    //Dynamically deallocating memory for pointers 
     for(int i = 0; i < art_students.size(); i++)
     {
         delete art_students[i];
